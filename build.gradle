@@ -7,7 +7,11 @@ buildscript {
         room_version = '2.1.0'
         room_runtime_version = '2.2.5'
         koin_version = '1.0.2'
-        nav_version = '2.3.0-alpha01'
+        nav_version = '2.3.0-alpha06'
+        viewpager2_version = '1.0.0-alpha01'
+        rxjava_version = '2.2.0'
+        rxandroid_version = '2.1.1'
+        retrofit2_version = '2.3.0'
     }
     repositories {
         google()

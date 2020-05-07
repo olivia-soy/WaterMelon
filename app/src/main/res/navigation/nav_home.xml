@@ -8,8 +8,8 @@
 
     <fragment
         android:id="@+id/view_fragment"
-        android:name="net.soy.watermelon.MainViewPageFragment"
-        tools:layout="@layout/fragment_main_test"
+        android:name="net.soy.watermelon.view.MainViewPageFragment"
+        tools:layout="@layout/fragment_main"
         >
         <action
             android:id="@+id/action_all_list"
@@ -22,10 +22,10 @@
     <fragment
         android:id="@+id/fragment_all_list"
         tools:layout="@layout/fragment_all_list"
-        android:name="net.soy.watermelon.AllListFragment"/>
+        android:name="net.soy.watermelon.view.AllListFragment"/>
 
     <fragment
         android:id="@+id/fragment_my_list"
         tools:layout="@layout/fragment_my_list"
-        android:name="net.soy.watermelon.MyListFragment"/>
+        android:name="net.soy.watermelon.view.MyListFragment"/>
 </navigation>

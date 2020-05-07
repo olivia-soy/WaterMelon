@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">WaterMelon</string>
-    <string name="main_activity_all_tab">전체</string>
-    <string name="main_activity_star_tab">나의 리스트</string>
+    <string name="all_list_tab">전체</string>
+    <string name="my_list_tab">나의 리스트</string>
+    <string name="input_text_hint">Please enter a search keyword.</string>
+    <string name="button_text">SEARCH</string>
 </resources>
