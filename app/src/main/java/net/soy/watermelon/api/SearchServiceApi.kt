@@ -6,14 +6,14 @@ import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.Query
 
-interface KakaoSearchServiceApi {
+interface SearchServiceApi {
 
-    @GET("/v2/search/book")
+    @GET("/v3/search/book")
     fun searchBook(@Header("Authorization") auth:String,
                     @Query("query") query:String,
-                    @Query("sort") sort:String,
-                    @Query("page") page:Int,
-                    @Query("target") target:Int,
-                    @Query("size") size:Int): Single<BookSearchResponse>
+                    @Query("sort") sort:String?,
+                    @Query("page") page:Int?,
+                    @Query("size") size:Int?,
+                    @Query("target") target:String?): Single<BookSearchResponse>
 
 }

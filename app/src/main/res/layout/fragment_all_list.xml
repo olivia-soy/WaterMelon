@@ -3,6 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener"/>
+        <variable
+            name="vm"
+            type="net.soy.watermelon.viewmodel.AllListViewModel" />
+    </data>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,6 +30,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/text_input_edit_text_search"
+                    android:text="@={vm.query}"
                     android:background="@color/cardview_light_background"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
@@ -31,12 +40,15 @@
                 style="@style/Widget.MaterialComponents.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:onClick="@{clickListener}"
                 android:text="@string/button_text" />
 
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_marginTop="20dp"
+            tools:listitem="@layout/item_book"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
